@@ -20,3 +20,9 @@ docker exec -it <container id> /bin/bash
 docker stop <container_id>
 
 #Загружаем образ в DockerHub
+docker tag local-image:tagname new-repo:tagname
+docker push new-repo:tagname
+
+# пример:
+docker tag wizdock77/counter-for-docker wizdock77/counter-for-docker
+docker push wizdock77/counter-for-docker
