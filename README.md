@@ -1,9 +1,9 @@
 # dockerback
  
-#Сборка образа
+# Сборка образа
 docker build . -t wizdock77/counter-for-docker
 
-#Запуск образа
+# Запуск образа
 docker run -p 49160:8080 -d wizdock77/counter-for-docker
 
 # отобразить все контейнеры, чтобы получить id нужного нам
@@ -21,7 +21,7 @@ docker exec -it <container id> /bin/bash
 # остановить запущеный контейнер
 docker stop <container_id>
 
-#Загружаем образ в DockerHub
+# Загружаем образ в DockerHub
 docker tag local-image:tagname new-repo:tagname
 docker push new-repo:tagname
 
